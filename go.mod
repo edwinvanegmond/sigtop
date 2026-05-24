@@ -1,4 +1,4 @@
-module github.com/tbvdm/sigtop
+module github.com/edwinvanegmond/sigtop
 
 go 1.25.0
 
