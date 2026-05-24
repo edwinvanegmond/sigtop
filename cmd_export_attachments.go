@@ -351,7 +351,6 @@ func copyAttachment(ctx *signal.Context, d at.Dir, path string, att *signal.Atta
 func setAttachmentModTime(d at.Dir, path string, att *signal.Attachment, mode mtimeMode) error {
     fmt.Println("Hello, worldd!")
     fmt.Println(path)
-    fmt.Println(mtimeMode)
 	var mtime int64
 	switch mode {
 	case mtimeSent:
