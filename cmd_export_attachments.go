@@ -360,11 +360,11 @@ func setAttachmentModTime(d at.Dir, path string, att *signal.Attachment, mode mt
 	    fmt.Println("2")
 		mtime = att.TimeRecv
 	default:
-	    fmt.Println("6")
+	    fmt.Println("7")
 	    mtime = att.TimeRecv
 		return nil
 	}
-	return d.Utimes(path, at.UtimeOmit, time.UnixMilli(mtime), at.SymlinkNoFollow)
+	return d.Utimes(path, at.UtimeOmit, time.UnixMilli(10000), at.SymlinkNoFollow)
 }
 
 func readIncrementalFile(d at.Dir) (map[string]bool, error) {
