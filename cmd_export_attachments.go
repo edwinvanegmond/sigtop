@@ -364,6 +364,8 @@ func setAttachmentModTime(d at.Dir, path string, att *signal.Attachment, mode mt
 	    mtime = att.TimeRecv
 		return nil
 	}
+
+	 fmt.Println(mtime)
 	return d.Utimes(path, at.UtimeOmit, time.UnixMilli(mtime-10000000), at.SymlinkNoFollow)
 }
 
