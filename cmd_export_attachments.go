@@ -360,7 +360,7 @@ func setAttachmentModTime(d at.Dir, path string, att *signal.Attachment, mode mt
 	    fmt.Println("2")
 		mtime = att.TimeRecv
 	default:
-	    fmt.Println("3")
+	    fmt.Println("4")
 	    mtime = att.TimeRecv
 		return nil
 	}
